@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primClr-Cyan: hsl(179, 62%, 43%);
+	--primClr-Yellow: hsl(71, 73%, 54%);
+	--neutClr-Light-Grey: hsl(204, 43%, 93%);
+	--neutClr-Greyish-Blue: hsl(218, 22%, 67%);
+	font-size: 16px;
+	font-family: "Karla", sans-serif;
+	line-height: 1.5rem;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: var(--neutClr-Light-Grey);
+	margin-top: -2rem;
+}
+.container {
+	border-radius: 0.4rem;
+	width: 86%;
+	margin-top: 5rem;
+	box-sizing: 3rem;
+	overflow: hidden;
+}
+
+h1 {
+	color: var(--primClr-Cyan);
+	font-size: 21px;
+	margin-bottom: 1.5rem;
+}
+
+h2.h2-top-section {
+	color: var(--primClr-Yellow);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.3rem;
+}
+p {
+	color: var(--neutClr-Greyish-Blue);
+	opacity: 0.8;
+	margin: 1.3rem 0 0.7rem 0;
+}
+.top-section {
+	background-color: white;
+	padding: 1.6rem;
+}
+.top-section p {
+	font-size: 14px;
+}
+.bottom-section {
+	color: #fff;
+}
+.bottom-right,
+.bottom-left {
+	background-color: var(--primClr-Cyan);
+	padding: 1.5rem 1.5rem;
+}
+.bottom-right {
+	border-radius: 0 0 0.4rem 0.4rem;
+}
+h2 {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+.price-container {
+	display: flex;
+	gap: 0.7rem;
+}
+.price {
+	font-size: 34px;
+}
+.per-month {
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+.btn {
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 16px;
+	background-color: var(--primClr-Yellow);
+	border: none;
+	width: 100%;
+	border-radius: 0.3rem;
+	padding: 0.8rem 3rem;
+	box-shadow: 6px 6px 10px 0.5px hsl(179, 58%, 38%);
+}
+
+.bottom-right {
+	background-color: hsl(180, 47%, 52%);
+}
+li {
+	list-style: none;
+	font-size: 14px;
+	opacity: 0.6;
+}
+
+.bottom-section p {
+	color: #fff;
+	margin-top: 0.8rem;
+	margin-bottom: 1.6rem;
+}
+.bottom-section {
+	padding-bottom: 10rem;
+}
+
+/* --------------------------SMALL SCREEN---------------------------------------- */
+
+@media (min-width: 1052px) {
+	.container {
+		max-width: 44.25%;
+	}
+	.top-section {
+		padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+	}
+	.bottom-section {
+		display: flex;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	h2.h2-top-section {
+		font-size: 18px;
+	}
+	p.body-text {
+		font-size: 16px;
+	}
+	h2.bottom-left-h2 {
+		margin-bottom: 1.5rem;
+	}
+	.bottom-left,
+	.bottom-right {
+		width: 50%;
+		padding: 2.5rem 2.5rem;
+	}
+	.bottom-right {
+		border-radius: 0 0 0.5rem 0;
+	}
+	.bottom-left {
+		border-radius: 0 0 0 0.5rem;
+	}
+	.btn {
+		transform: translateY(30px);
+	}
+}
